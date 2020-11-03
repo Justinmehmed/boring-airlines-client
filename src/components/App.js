@@ -1,6 +1,8 @@
 import Airline from './Airline';
-import Header from './Header';
 import ToAndFrom from './ToAndFrom';
+import Seats from './Seats'
+
+import Header from './Header';
 import Footer from './Footer';
 
 function App() {
@@ -9,6 +11,7 @@ function App() {
       <Header />
       <ToAndFrom />
       <Airline />
+      <Seats />
       <Footer />
 
     </div>
