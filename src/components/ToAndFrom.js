@@ -10,7 +10,7 @@ class ToAndFrom extends Component {
           <input placeholder="From"></input>
         </form>
       </div>
-    )
+    );
   }
 }
 
