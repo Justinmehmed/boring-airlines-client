@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import SeatDiagram from './SeatDiagram'
 
 class ReserveSeat extends Component {
   checkIfTaken = () => {

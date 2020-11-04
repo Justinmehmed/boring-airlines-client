@@ -1,14 +1,11 @@
-import ToAndFrom from './ToAndFrom';
-
 import Header from './Header';
+import ToAndFrom from './ToAndFrom'
 
 function App() {
   return (
     <div className="App">
     <Header />
     <ToAndFrom />
-    <Airline />
-    <Footer />
     </div>
   );
 }

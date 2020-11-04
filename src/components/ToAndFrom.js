@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
-import ListOfFlights from './ListOfFlights';
+
+import ListOfFlights from './ListOfFlights'
 
 class ToAndFrom extends Component {
+
 constructor() {
     super();
     this.state = {

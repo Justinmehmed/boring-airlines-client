@@ -5,6 +5,7 @@ import ReserveSeat from './ReserveSeat';
 import Seats from './Seats';
 
 
+
 class Flight extends Component {
   constructor() {
     super();
@@ -15,9 +16,8 @@ class Flight extends Component {
   render() {
     return(
       <div id="border-outline">
-      <SeatDiagram />
       <h3>Select a seat:</h3>
-      <PlaneDiagram />
+      <SeatDiagram />
       <ReserveSeat />
       <Seats />
       </div>
