@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 
-<<<<<<< HEAD
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
+
+import ListOfFlights from './ListOfFlights'
 
 const options = [
   'Sydney', 'Melbourne', 'Adelaide', 'Perth'
@@ -41,8 +42,6 @@ class ToAndFrom extends Component {
       <button type="submit" id="ToAndFromSubmit">Check for flights</button>
 
       </form>
-=======
-import ListOfFlights from './ListOfFlights'
 
 class ToAndFrom extends Component {
 
@@ -51,7 +50,6 @@ constructor() {
     this.state = {
       isSubmitted: false
     }
-
     this._handleSubmit = this._handleSubmit.bind(this)
   }
 
@@ -69,7 +67,6 @@ constructor() {
           <input type="submit" value="search"/>
         </form>
         {this.state.isSubmitted && <ListOfFlights />}
->>>>>>> 658af1dbc1d5f002ec0faf40f43207a2862a2fca
       </div>
     )
   }

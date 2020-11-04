@@ -20,6 +20,7 @@ ul {
 }
 
 /*=========================== COMPONENT BORDERS =================================*/
+
 #border-outline {
   border: 5px solid red;
 }
