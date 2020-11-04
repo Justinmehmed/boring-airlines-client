@@ -15,6 +15,7 @@ class Flight extends Component {
   render() {
     return(
       <div id="border-outline">
+      <h3>Select a seat:</h3>
       <PlaneDiagram />
       <ReserveSeat />
       <Seats />

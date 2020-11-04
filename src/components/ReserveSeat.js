@@ -40,7 +40,6 @@ class ReserveSeat extends Component {
     return (
       <div className={ this.state.isTaken ? "seat taken" : "seat free" } onClick={ this._handleClick } >
       <div className={ this.props.selectedSeat === this.props.seatId && !this.state.isTaken ? "selected" : null } >
-
       </div>
       </div>
     );
