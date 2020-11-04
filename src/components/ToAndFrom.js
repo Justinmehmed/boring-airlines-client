@@ -32,7 +32,6 @@ constructor() {
 
 _handleSubmit(event) {
   event.preventDefault();
-  this.props.onSubmit(this.state.to)
   this.setState({ to: '', from: '' })
 }
 
