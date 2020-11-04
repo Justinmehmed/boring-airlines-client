@@ -2,7 +2,6 @@ import Airline from './Airline';
 import ToAndFrom from './ToAndFrom';
 
 import Header from './Header';
-import Footer from './Footer';
 
 function App() {
   return (
@@ -10,7 +9,6 @@ function App() {
     <Header />
     <ToAndFrom />
     <Airline />
-    <Footer />
 
     </div>
   );
