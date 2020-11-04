@@ -7,33 +7,51 @@ const options = [
   'Sydney', 'Melbourne', 'Adelaide', 'Perth'
 ]
 
-const fromSydney = [
-  'Melbourne', 'Adelaide', 'Perth'
-];
-
-const fromMelbourne = [
-  'Sydney', 'Adelaide', 'Perth'
-];
-
-const fromAdelaide = [
-  'Sydney', 'Melbourne', 'Perth'
-];
+// const fromSydney = [
+//   'Melbourne', 'Adelaide', 'Perth'
+// ];
+//
+// const fromMelbourne = [
+//   'Sydney', 'Adelaide', 'Perth'
+// ];
+//
+// const fromAdelaide = [
+//   'Sydney', 'Melbourne', 'Perth'
+// ];
 
 class ToAndFrom extends Component {
 
+constructor() {
+  super()
+  this.state = {
+    to: '',
+    from: ''
+  }
+  this._handleSubmit = this._handleSubmit.bind(this);
+}
+
+_handleSubmit(event) {
+  event.preventDefault();
+  this.props.onSubmit(this.state.to)
+  this.setState({ to: '', from: '' })
+}
 
   render() {
     return(
       <div id="ToAndFromContainer">
-        <div id="dropDown">
-        <Dropdown options={options} onChange={this._onSelect} value="To"
-         />
-        </div>
-        <div id="dropDown">
-        <Dropdown options={options} onChange={this._onSelect} value="From"
-         />
-        </div>
-        <button id="ToAndFromSubmit">Check for flights</button>
+        <form onSubmit={ this._handleSubmit }>
+
+          <div id="dropDown">
+            <Dropdown options={options} onChange={this._onSelect} value={this.state.to}/>
+          </div>
+
+          <div id="dropDown">
+            <Dropdown options={options} onChange={this._onSelect} value={this.state.from}/>
+          </div>
+
+          <button type="submit" id="ToAndFromSubmit">Check for flights</button>
+
+        </form>
       </div>
     )
   }
