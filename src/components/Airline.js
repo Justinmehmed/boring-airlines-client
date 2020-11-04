@@ -4,7 +4,6 @@ import SeatDiagram from './SeatDiagram';
 import ReserveSeat from './ReserveSeat';
 import Seats from './Seats';
 
-import ToAndFrom from './ToAndFrom'
 
 
 class Flight extends Component {

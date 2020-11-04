@@ -1,6 +1,5 @@
-import React, { Component, useState } from 'react';
-import SeatDiagram from './SeatDiagram';
-import ReserveSeat from './ReserveSeat';
+import React, { Component } from 'react';
+
 
 // step 4. Create seat. Setting up the seat component
 
