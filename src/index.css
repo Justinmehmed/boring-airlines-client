@@ -23,8 +23,16 @@ ul {
   border: 5px solid red;
 }
 
-#ToAndFrom {
-  border: 5px solid orange;
+#ToAndFromContainer {
+  max-width: 150px;
+}
+
+#dropDown {
+  padding: 0.5em;
+}
+
+#ToAndFromSubmit {
+  margin-bottom: 0.5em;
 }
 
 #header {
