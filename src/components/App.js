@@ -6,9 +6,8 @@ function App() {
   return (
     <div className="App">
     <Header />
-    <ToAndFrom />
     <Airline />
-    <Footer />
+
     </div>
   );
 }

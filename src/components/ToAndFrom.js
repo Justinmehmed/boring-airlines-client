@@ -1,47 +1,6 @@
 import React, { Component } from 'react';
 
-import Dropdown from 'react-dropdown';
-import 'react-dropdown/style.css';
-
 import ListOfFlights from './ListOfFlights'
-
-const options = [
-  'Sydney', 'Melbourne', 'Adelaide', 'Perth'
-]
-
-class ToAndFrom extends Component {
-  // function for value
-
-  constructor() {
-    super()
-    this.state = {
-      to: '',
-      from: '',
-    }
-    this._handleSubmit = this._handleSubmit.bind(this);
-  }
-
-  _handleSubmit(event) {
-    event.preventDefault();
-    this.setState({ to: '', from: '' })
-  }
-
-  render() {
-    return(
-      <div id="ToAndFromContainer">
-      <form onSubmit={ this._handleSubmit }>
-
-      <div id="dropDown">
-      <Dropdown options={options} onChange={this._onSelect} value={this.state.to}/>
-      </div>
-
-      <div id="dropDown">
-      <Dropdown options={options} onChange={this._onSelect} value={this.state.from}/>
-      </div>
-
-      <button type="submit" id="ToAndFromSubmit">Check for flights</button>
-
-      </form>
 
 class ToAndFrom extends Component {
 
