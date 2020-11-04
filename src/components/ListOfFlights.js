@@ -27,7 +27,6 @@ _handleSubmit(event) {
 
         <form onSubmit={this._handleSubmit}>
           <div>
-          <strong>IF YOU CLICK ON ANOTHER BUTTON WHEN ONE HAS ALREADY LOADED SEATS, IT CRASHES - I think i caused the issue but if you can confirm sarah you weren't getting that same error.</strong>
             <p><strong>1/1/13</strong> SYD > JFK 18:00 <button onClick={this._handleSubmit}>✓</button></p>
           </div>
 

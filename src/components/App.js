@@ -7,7 +7,8 @@ function App() {
     <div className="App">
     <Header />
     <ToAndFrom />
-
+    <Airline />
+    <Footer />
     </div>
   );
 }
