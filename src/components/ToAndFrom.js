@@ -25,14 +25,13 @@ constructor() {
   super()
   this.state = {
     to: '',
-    from: ''
+    from: '',
   }
   this._handleSubmit = this._handleSubmit.bind(this);
 }
 
 _handleSubmit(event) {
   event.preventDefault();
-  this.props.onSubmit(this.state.to)
   this.setState({ to: '', from: '' })
 }
 
