@@ -25,7 +25,7 @@ constructor() {
   super()
   this.state = {
     to: '',
-    from: ''
+    from: '',
   }
   this._handleSubmit = this._handleSubmit.bind(this);
 }
@@ -52,7 +52,7 @@ _handleSubmit(event) {
 
         </form>
       </div>
-    )
+    );
   }
 }
 
