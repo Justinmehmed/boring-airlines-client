@@ -19,9 +19,24 @@ ul {
   list-style-type: none;
 }
 
+/*=========================== COMPONENT BORDERS =================================*/
 #border-outline {
   border: 5px solid red;
 }
+
+#searchComponent {
+  border:  5px solid orange;
+}
+
+#listOfFlightsComponent {
+  border: 5px solid Chartreuse;
+}
+
+#header {
+  border: 5px solid pink;
+}
+
+/*=========================== COMPONENT BORDERS =================================*/
 
 #ToAndFromContainer {
   max-width: 150px;
@@ -36,9 +51,6 @@ ul {
   margin-bottom: 0.5em;
 }
 
-#header {
-  border: 5px solid pink;
-}
 
 #footer {
   position: absolute;

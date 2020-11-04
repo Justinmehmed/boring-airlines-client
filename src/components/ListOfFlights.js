@@ -13,26 +13,21 @@ constructor() {
 }
 
 _handleSubmit(event) {
+  this.setState({flightSelected: false})
   console.log('Yes ive been clicked')
   event.preventDefault();
   this.setState({flightSelected: true})
-  if(this.state.flightSelected === true) {
-    console.log('Now i am true')
-  } else {
-    console.log('i am nothing')
-  }
 }
-
-
 
   render() {
     return(
-      <div>
+      <div id="listOfFlightsComponent">
 
         <h4>Available Flights</h4>
 
         <form onSubmit={this._handleSubmit}>
           <div>
+          <strong>IF YOU CLICK ON ANOTHER BUTTON WHEN ONE HAS ALREADY LOADED SEATS, IT CRASHES - I think i caused the issue but if you can confirm sarah you weren't getting that same error.</strong>
             <p><strong>1/1/13</strong> SYD > JFK 18:00 <button onClick={this._handleSubmit}>✓</button></p>
           </div>
 
@@ -44,7 +39,7 @@ _handleSubmit(event) {
             <p><strong>5/1/13</strong> SYD > JFK 12:00 <button onClick={this._handleSubmit}>✓</button></p>
           </div>
         </form>
-        {this.state.flightSelected && <Airline />}
+        {this.state.flightSelected && <Airline /> }
       </div>
     )
   }

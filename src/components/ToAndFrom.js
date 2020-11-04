@@ -21,7 +21,7 @@ constructor() {
   }
   render () {
     return (
-      <div>
+      <div id="searchComponent">
         <form onSubmit={this._handleSubmit} className="ToAndFromSubmit">
           <input type="search" placeholder="destination"/>
           <input type="submit" value="search"/>
