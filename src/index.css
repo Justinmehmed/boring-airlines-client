@@ -47,7 +47,7 @@ ul {
   padding-bottom: 5em;
 }
 
-button.square {
+button.seats {
   width: 50px;
   height: 50px;
   padding: 5px;
@@ -56,6 +56,22 @@ button.square {
   background: lightgray;
 }
 
-button.square:active {
+button.seats:active {
   background: lightgreen;
+}
+
+button.seats---unavailable {
+  background-color: red;
+}
+
+div.seating-row, button.seats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bolder;
+}
+
+p.row {
+  padding-right: 0.5em;
 }

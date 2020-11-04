@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PlaneDiagram from './PlaneDiagram'
+import SeatDiagram from './SeatDiagram'
 
 class ReserveSeat extends Component {
   checkIfTaken = () => {
@@ -27,12 +27,11 @@ class ReserveSeat extends Component {
   }
 
   _handleClick = (e) => {
-    // console.log( this.props.seatId );
+    console.log( 'seat' );
     this.props.getSelectedSeat( this.props.seatId );
     this.setState({
       isSelected: true
     });
-
   }
 
   render() {
@@ -40,7 +39,6 @@ class ReserveSeat extends Component {
     return (
       <div className={ this.state.isTaken ? "seat taken" : "seat free" } onClick={ this._handleClick } >
       <div className={ this.props.selectedSeat === this.props.seatId && !this.state.isTaken ? "selected" : null } >
-
       </div>
       </div>
     );

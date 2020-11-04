@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import PlaneDiagram from './PlaneDiagram';
+import SeatDiagram from './SeatDiagram';
 import ReserveSeat from './ReserveSeat';
 import Seats from './Seats';
 
@@ -15,11 +15,11 @@ class Flight extends Component {
   render() {
     return(
       <div id="border-outline">
-      <PlaneDiagram />
+      <SeatDiagram />
       <ReserveSeat />
       <Seats />
       </div>
-    )
+    );
   }
 }
 

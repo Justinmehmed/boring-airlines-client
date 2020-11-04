@@ -11,7 +11,6 @@ function App() {
     <ToAndFrom />
     <Airline />
     <Footer />
-
     </div>
   );
 }
