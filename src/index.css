@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   padding: 4em;
-  max-width: 600px;
+  max-width: 960px;
 }
 
 code {
@@ -19,21 +19,22 @@ ul {
   list-style-type: none;
 }
 
-
 /*=========================== COMPONENT BORDERS =================================*/
 
-
-#searchComponent {
-  padding-top: 1px;
-  background-color: rgba(0,0,0,.3);
-  padding-bottom: 1px;
+#border-outline {
+  border: 5px solid red;
 }
 
+#searchComponent {
+  border:  5px solid orange;
+}
+
+#listOfFlightsComponent {
+  border: 5px solid Chartreuse;
+}
 
 #header {
-  background-color: rgba(0,0,0,.3);
-  padding-top: 1px;
-  padding-bottom: 1px;
+  border: 5px solid pink;
 }
 
 /*=========================== COMPONENT BORDERS =================================*/
@@ -51,19 +52,16 @@ ul {
   margin-bottom: 0.5em;
 }
 
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 960px;
+  height: 2.5rem;
+  padding-bottom: 5em;
+}
+
 /*=========================== SEAT DIAGRAM =================================*/
-.searchDiv {
-  padding-left: 35%;
-  padding-right: 35%;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
-
-#searchButtonTo {
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
 
 button.seats {
   width: 50px;
@@ -94,3 +92,5 @@ p.row {
   padding-right: 0.5em;
   margin-left: -1.8em;
 }
+
+/*=========================== SEAT DIAGRAM =================================*/
