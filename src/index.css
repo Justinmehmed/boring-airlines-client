@@ -22,9 +22,6 @@ ul {
 
 /*=========================== COMPONENT BORDERS =================================*/
 
-#border-outline {
-
-}
 
 #searchComponent {
   padding-top: 1px;
@@ -32,13 +29,11 @@ ul {
   padding-bottom: 1px;
 }
 
-#listOfFlightsComponent {
-
-}
 
 #header {
   background-color: rgba(0,0,0,.3);
-
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 /*=========================== COMPONENT BORDERS =================================*/
