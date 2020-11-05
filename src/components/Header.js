@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
 
+
 class Header extends Component {
   render() {
     return (
       <div id="header">
-        <h1>Boring Airline Search</h1>
+        <div>
+          <h1>Boring Airline</h1>
+        </div>
       </div>
     );
   }

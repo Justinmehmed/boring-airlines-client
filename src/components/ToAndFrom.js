@@ -1,16 +1,33 @@
 import React, { Component } from 'react';
 
+import axios from 'axios';
+
 import ListOfFlights from './ListOfFlights'
+
+
+const SERVER_URL = 'Help me'
 
 class ToAndFrom extends Component {
 
 constructor() {
     super();
     this.state = {
-      isSubmitted: false
+      isSubmitted: false,
+      data: ''
     }
     this._handleSubmit = this._handleSubmit.bind(this)
-  }
+
+    const getData = () => {
+          axios.get(SERVER_URL).then((results) => {
+            this.setState({data: results.data})
+            setTimeout(getData, 6000);
+          })
+        };
+        getData();
+      }
+
+
+
   _handleSubmit(event) {
     event.preventDefault();
     console.log('Button submitted!');
@@ -20,10 +37,12 @@ constructor() {
   render () {
     return (
       <div id="searchComponent">
-        <form onSubmit={this._handleSubmit} className="ToAndFromSubmit">
-          <input type="search" placeholder="destination"/>
-          <input type="submit" value="search"/>
-        </form>
+        <div className="searchDiv">
+          <form onSubmit={this._handleSubmit} className="ToAndFromSubmit">
+            <input type="search" placeholder="destination"/>
+            <input id="searchButtonTo" type="submit" value="search"/>
+          </form>
+        </div>
         {this.state.isSubmitted && <ListOfFlights />}
       </div>
     )
