@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import Button from 'react-bootstrap/Button';
-
 import ListOfFlights from './ListOfFlights'
 
 class ToAndFrom extends Component {
@@ -22,10 +20,10 @@ constructor() {
   render () {
     return (
       <div id="searchComponent">
-        <div>
+        <div className="searchDiv">
           <form onSubmit={this._handleSubmit} className="ToAndFromSubmit">
             <input type="search" placeholder="destination"/>
-            <input type="submit" value="search"/>
+            <input id="searchButtonTo" type="submit" value="search"/>
           </form>
         </div>
         {this.state.isSubmitted && <ListOfFlights />}
