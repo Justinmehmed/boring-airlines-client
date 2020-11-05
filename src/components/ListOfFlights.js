@@ -27,7 +27,7 @@ _handleSubmit(event) {
 
         <form onSubmit={this._handleSubmit}>
           <div>
-            <p><strong>1/1/13</strong> SYD > JFK 18:00 <button onClick={this._handleSubmit}>✓</button></p>
+            <p><strong>1/1/13</strong> SYD > JFK 18:00 <button className="tick-button" onClick={this._handleSubmit}>✓</button></p>
           </div>
 
         </form>

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@100&display=swap');
+
 body {
   margin: auto;
   font-family: -apple-system, BlinkMacSystemFont, ‘Segoe UI’, ‘Roboto’, ‘Oxygen’,
@@ -7,6 +10,7 @@ body {
   text-align: center;
   padding: 4em;
   max-width: 600px;
+  background: #00BCD4;
 }
 
 code {
@@ -17,20 +21,23 @@ code {
 ul {
   list-style-type: none;
 }
+
+button.tick-button {
+  margin-left: 1em;
+}
+
 /*=========================== COMPONENT BORDERS =================================*/
 
 #searchComponent {
   padding-top: 1px;
   background-color: black;
   color: #00BCD4;
-  opacity: 0.9;
   padding-bottom: 1px;
 }
 
 #header {
   background-color: black;
   color: #00BCD4;
-  opacity: 0.9;
   padding-top: 1px;
   padding-bottom: 1px;
 }
@@ -39,6 +46,21 @@ h1 {
   color: white;
   font-family: 'Abril Fatface';
   font-style: italic;
+}
+
+strong {
+  color: #00BCD4;
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+input {
+  text-align: center;
+  margin-left: 0;
 }
 
 /*=========================== COMPONENT BORDERS =================================*/
@@ -53,12 +75,14 @@ h1 {
 }
 
 #ToAndFromSubmit {
+  font-family: 'Catamaran', sans-serif;
   margin-bottom: 0.5em;
 }
 
 /*=========================== SEAT DIAGRAM =================================*/
 
 .searchDiv {
+  font-family: 'Catamaran', sans-serif;
   padding-left: 35%;
   padding-right: 35%;
   margin-top: 2em;
@@ -66,6 +90,7 @@ h1 {
 }
 
 #searchButtonTo {
+  font-family: 'Catamaran', sans-serif;
   margin-left: 20%;
   margin-right: 20%;
 }
@@ -88,6 +113,7 @@ button.seats---unavailable {
 }
 
 div.seating-row, button.seats {
+  font-family: 'Catamaran', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
