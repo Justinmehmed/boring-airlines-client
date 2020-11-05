@@ -5,7 +5,7 @@ import axios from 'axios';
 import ListOfFlights from './ListOfFlights'
 
 
-const SERVER_URL = 'http://localhost:3000/flights.json'
+const SERVER_URL = 'http://localhost:3000/flights/1.json'
 
 class ToAndFrom extends Component {
 
@@ -20,7 +20,7 @@ constructor() {
     const getData = () => {
           axios.get(SERVER_URL).then((results) => {
             this.setState({data: results.data})
-            setTimeout(getData, 6000);
+            console.log(results.data)
           })
         };
         getData();
@@ -28,7 +28,6 @@ constructor() {
 
   _handleSubmit(event) {
     event.preventDefault();
-    console.log('Button submitted!');
     this.setState({isSubmitted: true})
     // this.props.onSubmit( this.state.query ); - this line is to pass this.state.query into props, not used until called in parent component
   }
